@@ -152,7 +152,7 @@ namespace CoffeeShop.Controllers
                 d.Quantity = item.Quantity;
                 var total = item.Price * item.Quantity;
                 a += (double)total;
-                d.Total = (decimal)a;
+                d.Total = (decimal)total;
                 _ctx.DetailBills.Add(d);
             }
             decimal div = 5m / 100m;

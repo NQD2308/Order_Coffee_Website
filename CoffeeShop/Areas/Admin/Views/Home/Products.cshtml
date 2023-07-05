@@ -78,15 +78,6 @@
             @(Html.DropDownList("GenreId", @ViewBag.GenreId,
                                                      "--Choose category --",
                 new { @class = "form-control",  onchange = "this.form.submit()" }))
-
-            @*<select name="GenreId" onchange="this.form.submit()"  asp-items="@ViewBag.GenreId">
-                
-            </select>*@
-
-           @* <select name="GenreId"  asp-items="@ViewBag.GenreId"  onchange="this.form.submit()">
-
-            </select>*@
-            @*<button type="submit"></button>*@
         </div>
 
         <table class="table-of-list">

@@ -101,18 +101,7 @@ namespace CoffeeShop.Areas.Identity.Pages.Account
             ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
 
             ReturnUrl = returnUrl;
-
-            if (returnUrl.Contains("admin"))
-            {
-                returnUrl = Url.Content("~/identity/account/login");
-
-            }
-            else
-            {
-                returnUrl = Url.Content("~/identity/account/logincustomer");
-
-            }
-
+            returnUrl = Url.Content("~/identity/account/login");
         }
 
         public async Task<IActionResult> OnPostAsync(string returnUrl = null)

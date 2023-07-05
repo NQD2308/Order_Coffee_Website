@@ -40,7 +40,7 @@ namespace CoffeeShop.Areas.Admin.Controllers
             return LocalRedirect("/identity/account/login");
         }
         [HttpPost]
-        public IActionResult FillProductById(int page = 1, int pageSize = 4)
+        public IActionResult FillProductById(/*int page = 1, int pageSize = 4*/)
         {
 
             string id = Request.Form["GenreId"].ToString();
@@ -50,7 +50,7 @@ namespace CoffeeShop.Areas.Admin.Controllers
             var genreList = _genreRepository.GetAll();
             ViewBag.GenreId = new SelectList(genreList, "GenreId", "GenreName");
 
-            var allData = _productRepository.FindAllProductById(id1);
+            /*var allData = _productRepository.FindAllProductById(id1);
             int itemsPerPage = 10; // Số mục muốn hiển thị cho mỗi trang
 
             // Lấy tổng số mục từ nguồn dữ liệu của bạn (ví dụ: cơ sở dữ liệu)
@@ -64,9 +64,9 @@ namespace CoffeeShop.Areas.Admin.Controllers
             int startIndex = (page - 1) * itemsPerPage;
             int endIndex = startIndex + itemsPerPage;
 
-            ViewBag.CurrentPage = page;
+            ViewBag.CurrentPage = page;*/
 
-            List<Product> products = _productRepository.FindAllProductById(id1).OrderBy(x => x.ProductId).Skip(startIndex).Take(itemsPerPage).ToList();
+            List<Product> products = _productRepository.FindAllProductById(id1)/*.OrderBy(x => x.ProductId).Skip(startIndex).Take(itemsPerPage).ToList()*/;
             return View(products);
         }
         public IActionResult Products(int page = 1, int pageSize= 4)

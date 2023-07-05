@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\inetpub\wwwroot\jazzcafe</_PublishTargetUrl>
+    <History>True|2023-07-05T07:23:45.5834810Z;False|2023-07-05T14:22:38.9712277+07:00;False|2023-07-05T14:22:13.6871591+07:00;True|2023-07-05T14:00:00.1445011+07:00;True|2023-07-05T13:42:51.7452962+07:00;False|2023-07-05T13:42:21.3684056+07:00;True|2023-07-05T13:18:07.3489219+07:00;False|2023-07-05T13:17:54.0576028+07:00;True|2023-07-05T01:59:40.2443425+07:00;False|2023-07-05T01:58:55.1611264+07:00;True|2023-07-04T22:55:12.0823141+07:00;False|2023-07-04T22:53:35.3527106+07:00;False|2023-07-04T22:52:10.8366350+07:00;True|2023-07-04T21:38:32.9485476+07:00;False|2023-07-04T21:26:54.8307259+07:00;True|2023-07-04T19:35:53.9175783+07:00;True|2023-07-04T19:33:02.3237506+07:00;True|2023-07-04T19:21:36.0462683+07:00;False|2023-07-04T19:19:29.6517538+07:00;False|2023-07-04T19:18:18.0877898+07:00;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="JazzCoffee">
+      <Value>Server=.\SQLEXPRESS%3buid=sa%3bpassword=1%3bdatabase=Oder drinking%3bEncrypt=true%3bTrustServerCertificate=true</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+  <ItemGroup>
+    <EFMigrations Include="CoffeeShop.Data.CoffeeShopDBContext">
+      <Value>Server=.\SQLEXPRESS%3buid=sa%3bpassword=1%3bdatabase=Oder drinking%3bEncrypt=true%3bTrustServerCertificate=true</Value>
+    </EFMigrations>
+  </ItemGroup>
+</Project>

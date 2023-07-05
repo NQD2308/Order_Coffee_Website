@@ -87,6 +87,9 @@ namespace CoffeeShop.Areas.Identity.Pages.Account
             [Display(Name = "FullName")]
             public string FullName { get; set; }
 
+            [Required]
+            [Phone]
+            /*[StringLength(9, MinimumLength = 11)]*/
             [Display(Name = "PhoneNumber")]
             public string PhoneNumber { get; set; }
 

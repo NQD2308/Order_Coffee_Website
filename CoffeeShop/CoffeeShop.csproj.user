@@ -15,5 +15,6 @@
     <WebStackScaffolding_DbContextTypeFullName>CoffeeShop.Models.OderDrinkingContext</WebStackScaffolding_DbContextTypeFullName>
     <WebStackScaffolding_DbContextDialogWidth>650</WebStackScaffolding_DbContextDialogWidth>
     <WebStackScaffolding_IdentityDialogWidth>650</WebStackScaffolding_IdentityDialogWidth>
+    <NameOfLastUsedPublishProfile>E:\Projects\Order_Coffee_Website\CoffeeShop\Properties\PublishProfiles\FolderProfile.pubxml</NameOfLastUsedPublishProfile>
   </PropertyGroup>
 </Project>
